@@ -1,0 +1,8 @@
+<div>
+  <%= @inner_content %>
+</div>
+
+<%= live_render(@socket, StickyWeb.StickyLive,
+  id: "sticky",
+  sticky: true
+) %>

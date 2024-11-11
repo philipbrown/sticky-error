@@ -17,7 +17,8 @@ defmodule StickyWeb.Router do
   scope "/", StickyWeb do
     pipe_through :browser
 
-    get "/", PageController, :home
+    live "/a", PageALive
+    live "/b", PageBLive
   end
 
   # Other scopes may use custom stacks.
